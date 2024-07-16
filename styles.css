@@ -103,6 +103,11 @@ a {
     border-radius: 5%;
 }
 
+/* The images on the Backgrounds page will need to be smaller than the rest in order to fit nicely. */
+#backgrounds-art-box img {
+    height: 40vh;
+}
+
 .social-icons-box {
     display: flex;
     gap: 30px;
