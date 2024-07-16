@@ -1,0 +1,117 @@
+/* Fonts */
+.lovers-quarrel-regular {
+    font-family: "Lovers Quarrel", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.im-fell-great-primer-regular {
+    font-family: "IM Fell Great Primer", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.im-fell-great-primer-regular-italic {
+    font-family: "IM Fell Great Primer", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+/* Styling Defaults */
+
+body {
+    text-align: center;
+    color: antiquewhite;
+    background-color: black;
+    line-height: 130%;
+    font-family: "IM Fell Great Primer", serif;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 130%;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.username {
+    color: rgb(120, 109, 134);
+    font-family: "Lovers Quarrel", cursive;
+    font-size: 5rem;
+}
+
+.freepik-link {
+    color: rgb(120, 109, 134);
+    font-weight: bold;
+}
+
+.page-content-box, .text-box, .option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2vh;
+}
+
+.page-content-box {
+    align-items: center;
+}
+
+.text-box {
+    width: 40%;
+}
+
+.options-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+
+.option {
+    width: 20%;
+    background-color: rgb(47, 40, 48);
+    padding: 1%;
+    gap: 10px;
+    height: 60vh;
+    border-radius: 5%;
+}
+
+.option>img {
+    height: 60%;
+    object-fit: contain;
+}
+
+.art-box {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2vw;
+    flex-wrap: wrap;
+    width:85vw;
+}
+
+.art-box>img {
+    height: 50vh;
+    border-radius: 5%;
+}
+
+.social-icons-box {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.social-icons-box img {
+    height: 6vh;
+    object-fit: contain;
+    background-color: rgb(120, 109, 134);
+    border-radius: 15%;
+}
