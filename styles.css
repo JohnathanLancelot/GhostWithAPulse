@@ -108,6 +108,29 @@ a {
     height: 40vh;
 }
 
+.pop-up-box {
+    background-color: black;
+    border-style: dotted;
+    border-color: antiquewhite;
+    opacity: 90%;
+    left: 35vw;
+    top: 30vh;
+}
+
+.pop-up-box, .pop-up-box>p {
+    height: 40vh;
+    width: 30vw;
+    border-radius: 5%;
+    position:fixed;
+}
+
+.pop-up-box>p {
+    height: 30vh;
+    width: 20vw;
+    left: 40vw;
+    top: 45vh;
+}
+
 .social-icons-box {
     display: flex;
     gap: 30px;
