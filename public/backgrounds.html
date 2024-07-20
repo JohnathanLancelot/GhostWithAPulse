@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- External files -->
     <link rel="stylesheet" href="../styles.css"/>
+    <script src="./script.js"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,44 +29,60 @@
 
         <!-- The Art -->
         <div class="art-box" id="backgrounds-art-box">
-            <img src="../assets/images/art-images/backgrounds/Classroom.jpg" alt="An illustration of a primary school classroom.">
-            <img src="../assets/images/art-images/backgrounds/Bathroom.jpg" alt="An illustration of a dirty bathroom.">
-            <img src="../assets/images/art-images/backgrounds/Beach-room.jpg" alt="An illustration of a sea themed playroom.">
-            <img src="../assets/images/art-images/backgrounds/Bear-room.jpg" alt="An illustration of a play room with two tunnels. One is locked shut.">
-            <img src="../assets/images/art-images/backgrounds/Bedroom.jpg" alt="An illustration of a messy bedroom. 'We are the disease' is written on the wall.">
-            <img src="../assets/images/art-images/backgrounds/Cleaning-room.jpg" alt="An illustration of a decontamination room with a view into an abandoned lab.">
-            <img src="../assets/images/art-images/backgrounds/Stairs-1.jpg" alt="An illustration of a staircase leading down into a dark hallway.">
-            <img src="../assets/images/art-images/backgrounds/Hallway-2.jpg" alt="An illustration of the end of a hallway. Newspapers cover up a window on one side.">
-            <img src="../assets/images/art-images/backgrounds/Hallway-3.jpg" alt="An illustration of a sterile-looking hallway with a note on the floor (not readable).">
-            <img src="../assets/images/art-images/backgrounds/hallway-with-key.jpg" alt="An illustration of a hallway with a lantern attached to the wall and sand on the floor.">
-            <img src="../assets/images/art-images/backgrounds/Kitchen.jpg" alt="An illustration of a dirty abandoned kitchen.">
-            <img src="../assets/images/art-images/backgrounds/Lab-1.jpg" alt="An illustration of a tidy laboratory.">
-            <img src="../assets/images/art-images/backgrounds/Lab-2.jpg" alt="An illustration of a messy overgrown laboratory">
-            <img src="../assets/images/art-images/backgrounds/Lab-stairwell.jpg" alt="An illustration of a stairwell with some heavy doors at the bottom slightly opened to reveal a pitch dark room.">
-            <img src="../assets/images/art-images/backgrounds/Managers-office.jpg" alt="An illustration of an office with a dead man in a chair, with strange plants releasing spores around him.">
-            <img src="../assets/images/art-images/backgrounds/Mirror-room.jpg" alt="An illustration of a room full of mirrors, a spiral staircase leading down through the floor and a note on the carpet (unreadable).">
-            <img src="../assets/images/art-images/backgrounds/Notice-board.jpg" alt="An illustration of a notice board with notes on it e.g. 'Who keeps making the weird salad? -Tom'">
-            <img src="../assets/images/art-images/backgrounds/Outside.jpg" alt="An illustration of the end of a slide leading out into a field with the words 'You escaped!!' above it.">
-            <img src="../assets/images/art-images/backgrounds/phantasm-room.jpg" alt="An illustration of a playroom with a spiral staircase, a swing and a ball pit in it.">
-            <img src="../assets/images/art-images/backgrounds/Storage-room.jpg" alt="An illustration of a storage room full of old furniture, some books, a roll of tape etc.">
-            <img src="../assets/images/art-images/backgrounds/Title-page.jpg" alt="An illustration of a surreal playroom with two slides and the words 'I Made You a Happy World' in the middle.">
+            <img src="../assets/images/art-images/backgrounds/Classroom.jpg" alt="An illustration of a primary school classroom." onclick="popUp('backg', 1)">
+            <img src="../assets/images/art-images/backgrounds/Bathroom.jpg" alt="An illustration of a dirty bathroom." onclick="popUp('backg', 2)">
+            <img src="../assets/images/art-images/backgrounds/Beach-room.jpg" alt="An illustration of a sea themed playroom." onclick="popUp('backg', 3)">
+            <img src="../assets/images/art-images/backgrounds/Bear-room.jpg" alt="An illustration of a play room with two tunnels. One is locked shut." onclick="popUp('backg', 4)">
+            <img src="../assets/images/art-images/backgrounds/Bedroom.jpg" alt="An illustration of a messy bedroom. 'We are the disease' is written on the wall." onclick="popUp('backg', 5)">
+            <img src="../assets/images/art-images/backgrounds/Cleaning-room.jpg" id="decontam" alt="An illustration of a decontamination room with a view into an abandoned lab." onclick="popUp('backg', 6)" onmouseenter="changeVersion('Decontamination')" onmouseleave="changeVersionBack('Decontamination')">
+            <img src="../assets/images/art-images/backgrounds/Stairs-1.jpg" alt="An illustration of a staircase leading down into a dark hallway." onclick="popUp('backg', 7)">
+            <img src="../assets/images/art-images/backgrounds/Hallway-2.jpg" alt="An illustration of the end of a hallway. Newspapers cover up a window on one side." onclick="popUp('backg', 8)">
+            <img src="../assets/images/art-images/backgrounds/Hallway-3.jpg" alt="An illustration of a sterile-looking hallway with a note on the floor (not readable)." onclick="popUp('backg', 9)">
+            <img src="../assets/images/art-images/backgrounds/hallway-with-key.jpg" alt="An illustration of a hallway with a lantern attached to the wall and sand on the floor." onclick="popUp('backg', 10)">
+            <img src="../assets/images/art-images/backgrounds/Kitchen.jpg" alt="An illustration of a dirty abandoned kitchen." onclick="popUp('backg', 11)">
+            <img src="../assets/images/art-images/backgrounds/Lab-1.jpg" alt="An illustration of a tidy laboratory." onclick="popUp('backg', 12)">
+            <img src="../assets/images/art-images/backgrounds/Lab-2.jpg" alt="An illustration of a messy overgrown laboratory" onclick="popUp('backg', 13)">
+            <img src="../assets/images/art-images/backgrounds/Lab-stairwell.jpg" alt="An illustration of a stairwell with some heavy doors at the bottom slightly opened to reveal a pitch dark room." onclick="popUp('backg', 14)">
+            <img src="../assets/images/art-images/backgrounds/Managers-office.jpg" alt="An illustration of an office with a dead man in a chair, with strange plants releasing spores around him." onclick="popUp('backg', 15)">
+            <img src="../assets/images/art-images/backgrounds/Mirror-room.jpg" alt="An illustration of a room full of mirrors, a spiral staircase leading down through the floor and a note on the carpet (unreadable)." onclick="popUp('backg', 16)">
+            <img src="../assets/images/art-images/backgrounds/Notice-board.jpg" alt="An illustration of a notice board with notes on it e.g. 'Who keeps making the weird salad? -Tom'" onclick="popUp('backg', 17)">
+            <img src="../assets/images/art-images/backgrounds/Outside.jpg" alt="An illustration of the end of a slide leading out into a field with the words 'You escaped!!' above it." onclick="popUp('backg', 18)">
+            <img src="../assets/images/art-images/backgrounds/phantasm-room.jpg" alt="An illustration of a playroom with a spiral staircase, a swing and a ball pit in it." onclick="popUp('backg', 19)">
+            <img src="../assets/images/art-images/backgrounds/Storage-room.jpg" alt="An illustration of a storage room full of old furniture, some books, a roll of tape etc." onclick="popUp('backg', 20)">
+            <img src="../assets/images/art-images/backgrounds/Title-page.jpg" alt="An illustration of a surreal playroom with two slides and the words 'I Made You a Happy World' in the middle." onclick="popUp('backg', 21)">
         </div>
 
         <!-- Text Pop-Up -->
-        <div class="pop-up-box">
-            <p id="ref-giraffe">
-                A reference sheet for a pastel-themed giraffe character which is currently for sale for US$45 or NZ$60. Feel free to reach out using any of the social media links listed in the footer if you are interested!
+        <div class="pop-up-box" id="backg-pop-up">
+            <p id="backg-classroom">
+                A primary school classroom scene for the game, 'Dearest Demons' — a psychological horror game which is currently being developed by GhostWithAPulse.
             </p>
-            <p id="ref-hedgehog">
-                A reference sheet for a goth-themed hedgehog character sold to Obsidian / Alyss!
+            <p id="backg-bathroom">
+                A messy bathroom scene made for the game, <a href="https://github.com/Crwhite7479/106.2-WLG-Project" class="game-link">'Wilfred's Last Garden'</a> — a sci-fi horror game created by Cory White & GhostWithAPulse.
+            </p>
+            <p id="backg-beach">
+                A beach-themed playroom scene made for the game, <a href="https://github.com/JohnathanLancelot/I-Made-You-A-Happy-World" class="game-link">'I Made You a Happy World'</a> — a psychological fantasy game created by Ana Karpova, Tianze Xie & GhostWithAPulse.
+            </p>
+            <p id="backg-bear-room">
+                A playroom scene with two tunnels in it, one of them locked. This was a scene made for the game, <a href="https://github.com/JohnathanLancelot/I-Made-You-A-Happy-World" class="game-link">'I Made You a Happy World'</a> — a psychological fantasy game created by Ana Karpova, Tianze Xie & GhostWithAPulse.
+            </p>
+            <p id="backg-bedroom">
+                A messy bedroom scene made for the game, <a href="https://github.com/Crwhite7479/106.2-WLG-Project" class="game-link">'Wilfred's Last Garden'</a> — a sci-fi horror game created by Cory White & GhostWithAPulse.
+            </p>
+            <p id="backg-cleaning-room">
+                The decontamination / spray room scene in the game, <a href="https://github.com/Crwhite7479/106.2-WLG-Project" class="game-link">'Wilfred's Last Garden'</a> — a sci-fi horror game created by Cory White & GhostWithAPulse.
             </p>
         </div>
+
+        <!-- X (Exit) Button -->
+        <img src="../assets/images/downloaded-icons/x-icon.png" alt="The 'X' exit button." class="exit-button" id="backg-exit-button" onclick="exitPopUp('backg')">
 
         <!-- Footer -->
         <footer>
             <p>©2024 All rights reserved. Every illustration shown on this page was made by Nathan Ki aka ghost.with.a.pulse.</p>
             <p>However, many backgrounds were made for indie games which are joint-owned collaborations. Hover over each image to view ownership details.</p>
             <p>Instagram, Twitter & Telegram icons designed by <a href="www.freepik.com"><span class="freepik-link">Freepik</span></a> and used under a free licence.</p>
+            <p>X button (for pop-ups) designed by <a href="https://www.freepik.com/author/pixelverse"><span class="freepik-link">@PixelVerse</span></a> and used under a free licence.</p>
             <div class="social-icons-box">
                 <a href="https://www.instagram.com/ghost.with.a.pulse"><img src="../assets/images/downloaded-icons/instagram-icon.png" alt="The Instagram icon (click to go to my Instagram page)."></a>
                 <a href="https://x.com/PulseWithAGhost"><img src="../assets/images/downloaded-icons/twitter-icon.png" alt="The old Twitter / X icon (click to go to my Twitter page)."></a>

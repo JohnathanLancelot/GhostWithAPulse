@@ -47,7 +47,7 @@ a {
     font-size: 5rem;
 }
 
-.freepik-link {
+.freepik-link, .game-link {
     color: rgb(120, 109, 134);
     font-weight: bold;
 }
@@ -122,6 +122,7 @@ a {
     width: 30vw;
     border-radius: 5%;
     position:fixed;
+    display: none;
 }
 
 .pop-up-box>p {
@@ -129,6 +130,17 @@ a {
     width: 20vw;
     left: 40vw;
     top: 45vh;
+}
+
+.exit-button {
+    height: auto;
+    width: 2vw;
+    left: 61.5%;
+    top: 33vh;
+    position: fixed;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    display: none;
 }
 
 .social-icons-box {

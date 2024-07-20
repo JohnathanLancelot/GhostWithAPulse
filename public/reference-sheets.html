@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External files -->
     <link rel="stylesheet" href="../styles.css"/>
+    <script src="./script.js"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,17 +24,17 @@
         <div class="text-box">
             <a href="../index.html"><h1><span class="username">@ghost.with.a.pulse</span> Online Art Portfolio</h1></a>
             <h2>Reference Sheets</h2>
-            <p>Tip: Hover over the images below to find out more about each piece.</p>
+            <p>Tip: Click on the images below to find out more about each piece.</p>
         </div>
 
         <!-- The Art -->
         <div class="art-box">
-            <img src="../assets/images/art-images/ref-sheets/Giraffe.jpg" alt="Front, back and icon illustrations of a giraffe character.">
-            <img src="../assets/images/art-images/ref-sheets/Hedgehog.jpg" alt="Front, back and icon illustrations of a hedgehog character.">
+            <img src="../assets/images/art-images/ref-sheets/Giraffe.jpg" alt="Front, back and icon illustrations of a giraffe character." onclick="popUp('reference', 1)">
+            <img src="../assets/images/art-images/ref-sheets/Hedgehog.jpg" alt="Front, back and icon illustrations of a hedgehog character." onclick="popUp('reference', 2)">
         </div>
 
         <!-- Text Pop-Up -->
-        <div class="pop-up-box">
+        <div class="pop-up-box" id="ref-pop-up">
             <p id="ref-giraffe">
                 A reference sheet for a pastel-themed giraffe character which is currently for sale for US$45 or NZ$60. Feel free to reach out using any of the social media links listed in the footer if you are interested!
             </p>
@@ -40,11 +43,15 @@
             </p>
         </div>
 
+        <!-- X (Exit) Button -->
+        <img src="../assets/images/downloaded-icons/x-icon.png" alt="The 'X' exit button." class="exit-button" id="ref-exit-button" onclick="exitPopUp('reference')">
+
         <!-- Footer -->
         <footer>
             <p>©2024 All rights reserved. Every illustration shown on this page was made by Nathan Ki aka ghost.with.a.pulse.</p>
-            <p>However, not all characters shown belong to the artist. Hover over each image to view ownership details.</p>
+            <p>However, not all characters shown belong to the artist. Click on each image to view ownership details.</p>
             <p>Instagram, Twitter & Telegram icons designed by <a href="www.freepik.com"><span class="freepik-link">Freepik</span></a> and used under a free licence.</p>
+            <p>X button (for pop-ups) designed by <a href="https://www.freepik.com/author/pixelverse"><span class="freepik-link">@PixelVerse</span></a> and used under a free licence.</p>
             <div class="social-icons-box">
                 <a href="https://www.instagram.com/ghost.with.a.pulse"><img src="../assets/images/downloaded-icons/instagram-icon.png" alt="The Instagram icon (click to go to my Instagram page)."></a>
                 <a href="https://x.com/PulseWithAGhost"><img src="../assets/images/downloaded-icons/twitter-icon.png" alt="The old Twitter / X icon (click to go to my Twitter page)."></a>
