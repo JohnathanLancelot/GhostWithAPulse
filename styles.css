@@ -36,6 +36,10 @@ h2 {
     font-size: 1.5rem;
 }
 
+p {
+    font-size: 1.1rem;
+}
+
 a {
     color: inherit;
     text-decoration: inherit;
@@ -129,7 +133,7 @@ a {
     height: 30vh;
     width: 20vw;
     left: 40vw;
-    top: 45vh;
+    top: 42vh;
 }
 
 .exit-button {

@@ -20,7 +20,99 @@ function popUp(category, number) {
         }
         else if (category == 'background')
         {
+            document.getElementById("backg-pop-up").style.display = "block";
+            document.getElementById("backg-exit-button").style.display = "block";
+
             // Backgrounds switch case:
+            switch (number)
+            {
+                case 1:
+                    document.getElementById("backg-classroom").style.display = "block";
+                    currentTextboxOpen = 'backg-classroom';
+                    break;
+                case 2:
+                    document.getElementById("backg-bathroom").style.display = "block";
+                    currentTextboxOpen = 'backg-bathroom';
+                    break;
+                case 3:
+                    document.getElementById("backg-beach").style.display = "block";
+                    currentTextboxOpen = 'backg-beach';
+                    break;
+                case 4:
+                    document.getElementById("backg-bear-room").style.display = "block";
+                    currentTextboxOpen = 'backg-bear-room';
+                    break;
+                case 5:
+                    document.getElementById("backg-bedroom").style.display = "block";
+                    currentTextboxOpen = 'backg-bedroom';
+                    break;
+                case 6:
+                    document.getElementById("backg-cleaning-room").style.display = "block";
+                    currentTextboxOpen = 'backg-cleaning-room';
+                    break;
+                case 7:
+                    document.getElementById("backg-stairwell-1").style.display = "block";
+                    currentTextboxOpen = 'backg-stairwell-1';
+                    break;
+                case 8:
+                    document.getElementById("backg-hallway-2").style.display = "block";
+                    currentTextboxOpen = 'backg-hallway-2';
+                    break;
+                case 9:
+                    document.getElementById("backg-hallway-3").style.display = "block";
+                    currentTextboxOpen = 'backg-hallway-3';
+                    break;
+                case 10:
+                    document.getElementById("backg-hallway-with-key").style.display = "block";
+                    currentTextboxOpen = 'backg-hallway-with-key';
+                    break;
+                case 11:
+                    document.getElementById("backg-kitchen").style.display = "block";
+                    currentTextboxOpen = 'backg-kitchen';
+                    break;
+                case 12:
+                    document.getElementById("backg-lab-1").style.display = "block";
+                    currentTextboxOpen = 'backg-lab-1';
+                    break;
+                case 13:
+                    document.getElementById("backg-lab-2").style.display = "block";
+                    currentTextboxOpen = 'backg-lab-2';
+                    break;
+                case 14:
+                    document.getElementById("backg-secret-stairwell").style.display = "block";
+                    currentTextboxOpen = 'backg-secret-stairwell';
+                    break;
+                case 15:
+                    document.getElementById("backg-managers-office").style.display = "block";
+                    currentTextboxOpen = 'backg-managers-office';
+                    break;
+                case 16:
+                    document.getElementById("backg-mirror-room").style.display = "block";
+                    currentTextboxOpen = 'backg-mirror-room';
+                    break;
+                case 17:
+                    document.getElementById("backg-noticeboard").style.display = "block";
+                    currentTextboxOpen = 'backg-noticeboard';
+                    break;
+                case 18:
+                    document.getElementById("backg-escape").style.display = "block";
+                    currentTextboxOpen = 'backg-escape';
+                    break;
+                case 19:
+                    document.getElementById("backg-ballpit").style.display = "block";
+                    currentTextboxOpen = 'backg-ballpit';
+                    break;
+                case 20:
+                    document.getElementById("backg-storage").style.display = "block";
+                    currentTextboxOpen = 'backg-storage';
+                    break;
+                case 21:
+                    document.getElementById("backg-IMYAHW").style.display = "block";
+                    currentTextboxOpen = 'backg-IMYAHW';
+                    break;
+                default:
+                    alert("Number tag for one or more reference images is invalid. Check HTML!");
+            }
         }
         else if (category == 'reference')
         {
@@ -53,15 +145,18 @@ function popUp(category, number) {
 function exitPopUp(category) {
     if (category == 'icon')
     {
-        // Icons switch case:
+        //
     }
     else if (category == 'character')
     {
-        // Characters switch case:
+        //
     }
     else if (category == 'background')
     {
-        // Backgrounds switch case:
+        document.getElementById("backg-pop-up").style.display = "none";
+        document.getElementById("backg-exit-button").style.display = "none";
+        document.getElementById(currentTextboxOpen).style.display = "none";
+        currentTextboxOpen = 'none';
     }
     else if (category == 'reference')
     {
@@ -85,6 +180,10 @@ function changeVersion(artTag)
         // Change the image used for this art when it is hovered over:
         document.getElementById("decontam").src = "../assets/images/art-images/backgrounds/Mist-room.jpg";
     }
+    else if (artTag == 'Stairwell')
+    {
+        document.getElementById("stairs").src = "../assets/images/art-images/backgrounds/Door-open.jpg";
+    }
     else
     {
         alert("Art tag for one or more art pieces with an alternative version is invalid. Check HTML!");
@@ -97,6 +196,10 @@ function changeVersionBack(artTag)
     if (artTag == 'Decontamination')
     {
         document.getElementById("decontam").src = "../assets/images/art-images/backgrounds/Cleaning-room.jpg";
+    }
+    else if (artTag == 'Stairwell')
+    {
+        document.getElementById("stairs").src = "../assets/images/art-images/backgrounds/Lab-stairwell.jpg";
     }
     else
     {
