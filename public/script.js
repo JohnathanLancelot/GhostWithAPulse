@@ -16,7 +16,115 @@ function popUp(category, number) {
         }
         else if (category == 'character')
         {
+            document.getElementById("char-pop-up").style.display = "block";
+            document.getElementById("char-exit-button").style.display = "block";
+
             // Characters switch case:
+            switch (number)
+            {
+                case 1:
+                    document.getElementById("char-fairy").style.display = "block";
+                    currentTextboxOpen = 'char-fairy';
+                    break;
+                case 2:
+                    document.getElementById("char-bat").style.display = "block";
+                    currentTextboxOpen = 'char-bat';
+                    break;
+                case 3:
+                    document.getElementById("char-candyfloss").style.display = "block";
+                    currentTextboxOpen = 'char-candyfloss';
+                    break;
+                case 4:
+                    document.getElementById("char-mascot").style.display = "block";
+                    currentTextboxOpen = 'char-mascot';
+                    break;
+                case 5:
+                    document.getElementById("char-corpsie-badge").style.display = "block";
+                    currentTextboxOpen = 'char-corpsie-badge';
+                    break;
+                case 6:
+                    document.getElementById("char-dog").style.display = "block";
+                    currentTextboxOpen = 'char-dog';
+                    break;
+                case 7:
+                    document.getElementById("char-fable").style.display = "block";
+                    currentTextboxOpen = 'char-fable';
+                    break;
+                case 8:
+                    document.getElementById("char-gazelle-duck").style.display = "block";
+                    currentTextboxOpen = 'char-gazelle-duck';
+                    break;
+                case 9:
+                    document.getElementById("char-hare").style.display = "block";
+                    currentTextboxOpen = 'char-hare';
+                    break;
+                case 10:
+                    document.getElementById("char-izzy").style.display = "block";
+                    currentTextboxOpen = 'char-izzy';
+                    break;
+                case 11:
+                    document.getElementById("char-lovis").style.display = "block";
+                    currentTextboxOpen = 'char-lovis';
+                    break;
+                case 12:
+                    document.getElementById("char-nix").style.display = "block";
+                    currentTextboxOpen = 'char-nix';
+                    break;
+                case 13:
+                    document.getElementById("char-npcs").style.display = "block";
+                    currentTextboxOpen = 'char-npcs';
+                    break;
+                case 14:
+                    document.getElementById("char-nyx-cave").style.display = "block";
+                    currentTextboxOpen = 'char-nyx-cave';
+                    break;
+                case 15:
+                    document.getElementById("char-nyx-space").style.display = "block";
+                    currentTextboxOpen = 'char-nyx-space';
+                    break;
+                case 16:
+                    document.getElementById("char-obsidian").style.display = "block";
+                    currentTextboxOpen = 'char-obsidian';
+                    break;
+                case 17:
+                    document.getElementById("char-reaper").style.display = "block";
+                    currentTextboxOpen = 'char-reaper';
+                    break;
+                case 18:
+                    document.getElementById("char-phantasm-fullbody").style.display = "block";
+                    currentTextboxOpen = 'char-phantasm-fullbody';
+                    break;
+                case 19:
+                    document.getElementById("char-piggie-back").style.display = "block";
+                    currentTextboxOpen = 'char-piggie-back';
+                    break;
+                case 20:
+                    document.getElementById("char-snow-leopard").style.display = "block";
+                    currentTextboxOpen = 'char-snow-leopard';
+                    break;
+                case 21:
+                    document.getElementById("char-relay").style.display = "block";
+                    currentTextboxOpen = 'char-relay';
+                    break;
+                case 22:
+                    document.getElementById("char-rudolph").style.display = "block";
+                    currentTextboxOpen = 'char-rudolph';
+                    break;
+                case 23:
+                    document.getElementById("char-spook-phantasm-kiss").style.display = "block";
+                    currentTextboxOpen = 'char-spook-phantasm-kiss';
+                    break;
+                case 24:
+                    document.getElementById("char-werewolf").style.display = "block";
+                    currentTextboxOpen = 'char-werewolf';
+                    break;
+                case 25:
+                    document.getElementById("char-maple-tree").style.display = "block";
+                    currentTextboxOpen = 'char-maple-tree';
+                    break;
+                default:
+                    alert("Number tag for one or more character images is invalid. Check HTML!");
+            }
         }
         else if (category == 'background')
         {
@@ -111,7 +219,7 @@ function popUp(category, number) {
                     currentTextboxOpen = 'backg-IMYAHW';
                     break;
                 default:
-                    alert("Number tag for one or more reference images is invalid. Check HTML!");
+                    alert("Number tag for one or more background images is invalid. Check HTML!");
             }
         }
         else if (category == 'reference')
@@ -149,7 +257,10 @@ function exitPopUp(category) {
     }
     else if (category == 'character')
     {
-        //
+        document.getElementById("char-pop-up").style.display = "none";
+        document.getElementById("char-exit-button").style.display = "none";
+        document.getElementById(currentTextboxOpen).style.display = "none";
+        currentTextboxOpen = 'none';
     }
     else if (category == 'background')
     {
@@ -162,6 +273,13 @@ function exitPopUp(category) {
     {
         document.getElementById("ref-pop-up").style.display = "none";
         document.getElementById("ref-exit-button").style.display = "none";
+        document.getElementById(currentTextboxOpen).style.display = "none";
+        currentTextboxOpen = 'none';
+    }
+    else if (category == 'reaper')
+    {
+        document.getElementById("char-pop-up").style.display = "none";
+        document.getElementById("char-exit-button").style.display = "none";
         document.getElementById(currentTextboxOpen).style.display = "none";
         currentTextboxOpen = 'none';
     }
@@ -184,6 +302,18 @@ function changeVersion(artTag)
     {
         document.getElementById("stairs").src = "../assets/images/art-images/backgrounds/Door-open.jpg";
     }
+    else if (artTag == 'Reaper')
+    {
+        document.getElementById("reaper").src = "../assets/images/art-images/characters/Oxifawkes-reaper-1.jpg";
+    }
+    else if (artTag == 'Fable')
+    {
+        document.getElementById("fable").src = "../assets/images/art-images/characters/Fable-2.jpg";
+    }
+    else if (artTag == 'MapleTree')
+    {
+        document.getElementById("maple").src = "../assets/images/art-images/characters/Game-art-2.PNG";
+    }
     else
     {
         alert("Art tag for one or more art pieces with an alternative version is invalid. Check HTML!");
@@ -200,6 +330,18 @@ function changeVersionBack(artTag)
     else if (artTag == 'Stairwell')
     {
         document.getElementById("stairs").src = "../assets/images/art-images/backgrounds/Lab-stairwell.jpg";
+    }
+    else if (artTag == 'Reaper')
+    {
+        document.getElementById("reaper").src = "../assets/images/art-images/characters/Oxifawkes-reaper-2.jpg";
+    }
+    else if (artTag == 'Fable')
+    {
+        document.getElementById("fable").src = "../assets/images/art-images/characters/Fable-1.jpg";
+    }
+    else if (artTag == 'MapleTree')
+    {
+        document.getElementById("maple").src = "../assets/images/art-images/characters/Game-art-1.PNG";
     }
     else
     {
