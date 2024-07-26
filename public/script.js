@@ -12,7 +12,67 @@ function popUp(category, number) {
         */
         if (category == 'icon')
         {
+            document.getElementById("icon-pop-up").style.display = "block";
+            document.getElementById("icon-exit-button").style.display = "block";
+
             // Icons switch case:
+            switch (number)
+            {
+                case 1:
+                    document.getElementById("icon-luca").style.display = "block";
+                    currentTextboxOpen = 'icon-luca';
+                    break;
+                case 2:
+                    document.getElementById("icon-lillian").style.display = "block";
+                    currentTextboxOpen = 'icon-lillian';
+                    break;
+                case 3:
+                    document.getElementById("icon-abigail").style.display = "block";
+                    currentTextboxOpen = 'icon-abigail';
+                    break;
+                case 4:
+                    document.getElementById("icon-corpsie").style.display = "block";
+                    currentTextboxOpen = 'icon-corpsie';
+                    break;
+                case 5:
+                    document.getElementById("icon-chloe").style.display = "block";
+                    currentTextboxOpen = 'icon-chloe';
+                    break;
+                case 6:
+                    document.getElementById("icon-daisy").style.display = "block";
+                    currentTextboxOpen = 'icon-daisy';
+                    break;
+                case 7:
+                    document.getElementById("icon-meddy").style.display = "block";
+                    currentTextboxOpen = 'icon-meddy';
+                    break;
+                case 8:
+                    document.getElementById("icon-oxifawkes").style.display = "block";
+                    currentTextboxOpen = 'icon-oxifawkes';
+                    break;
+                case 9:
+                    document.getElementById("icon-pan").style.display = "block";
+                    currentTextboxOpen = 'icon-pan';
+                    break;
+                case 10:
+                    document.getElementById("icon-peek").style.display = "block";
+                    currentTextboxOpen = 'icon-peek';
+                    break;
+                case 11:
+                    document.getElementById("icon-phantasm").style.display = "block";
+                    currentTextboxOpen = 'icon-phantasm';
+                    break;
+                case 12:
+                    document.getElementById("icon-vex").style.display = "block";
+                    currentTextboxOpen = 'icon-vex';
+                    break;
+                case 13:
+                    document.getElementById("icon-whippet").style.display = "block";
+                    currentTextboxOpen = 'icon-whippet';
+                    break;
+                default:
+                    alert("Number tag for one or more icon images is invalid. Check HTML!");
+            }
         }
         else if (category == 'character')
         {
@@ -253,7 +313,10 @@ function popUp(category, number) {
 function exitPopUp(category) {
     if (category == 'icon')
     {
-        //
+        document.getElementById("icon-pop-up").style.display = "none";
+        document.getElementById("icon-exit-button").style.display = "none";
+        document.getElementById(currentTextboxOpen).style.display = "none";
+        currentTextboxOpen = "none";
     }
     else if (category == 'character')
     {
