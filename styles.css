@@ -168,6 +168,11 @@ footer {
 
 @media (max-width: 1020px) {
 
+    /* Making the intro text wider: */
+    .text-box {
+        width: 70%;
+    }
+
     /* Making the category options display vertically at this size to reduce layout distortion: */
     .options-box {
         flex-direction: column;
@@ -198,5 +203,24 @@ footer {
     
     h2 {
         font-size: 1.3rem;
+    }
+
+    /* Making the art smaller so it doesn't overlap the width of the page: */
+    .art-box>img {
+        height: 40vh;
+    }
+
+    /* Making the pop-up text fit better: */
+    .pop-up-box>p {
+        top: 39vh;
+    }
+}
+
+@media (max-width: 790px) {
+    /* Making the art display vertically to allow for better viewing without having to shrink the images too much: */
+    .art-box {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
     }
 }
