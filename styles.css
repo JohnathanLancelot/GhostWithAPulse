@@ -159,3 +159,44 @@ a {
     background-color: rgb(120, 109, 134);
     border-radius: 15%;
 }
+
+footer {
+    width: 80vw;
+}
+
+/* Making the site responsive using media queries: */
+
+@media (max-width: 1020px) {
+
+    /* Making the category options display vertically at this size to reduce layout distortion: */
+    .options-box {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 3vh;
+    }
+
+    .option {
+        width: 50%;
+    }
+
+    /* Making the exit button on pop-ups bigger to improve visibility: */
+    .exit-button {
+        height: auto;
+        width: 3.5vw;
+        left: 60%;
+        top: 33vh;
+    }
+}
+
+@media (max-width: 850px) {
+    /* Making some of the text smaller to prevent layout warp: */
+    h1 {
+        font-size: 1.5rem;
+        line-height: 130%;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+}
