@@ -60,7 +60,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 2vh;
 }
 
 .page-content-box {
@@ -187,18 +186,18 @@ footer {
 
     /* Making the exit button on pop-ups bigger to improve visibility: */
     .exit-button {
-        height: auto;
         width: 3.5vw;
         left: 60%;
-        top: 33vh;
     }
 }
 
+/* UP TO HERE WITH RESPONSIVE POP-UPS- Character page exit button warping at 903px. */
+
 @media (max-width: 850px) {
+
     /* Making some of the text smaller to prevent layout warp: */
     h1 {
         font-size: 1.5rem;
-        line-height: 130%;
     }
     
     h2 {
@@ -217,10 +216,88 @@ footer {
 }
 
 @media (max-width: 790px) {
+
     /* Making the art display vertically to allow for better viewing without having to shrink the images too much: */
     .art-box {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
+        gap: 3.5vh;
+    }
+
+    .art-box>img {
+        height: auto;
+        width: 80vw;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Centering and enlarging the exit button to make it more visible: */
+    .exit-button {
+        width: 4vw;
+        left: 49%;
+    }
+
+    /* Making the pop-up text fit better: */
+    .pop-up-box>p {
+        top: 35vh;
+    }
+}
+
+@media (max-width: 554px) {
+    
+    /* Making the options take up a greater persentage of the screen's width: */
+    .option {
+        width: 70%;
+    }
+}
+
+@media (max-width: 448px) {
+    
+    /* Reduce the size of the username to fit better: */
+    .username {
+        font-size: 4rem;
+    }
+
+    /* Improving the look of the options at a smaller size: */
+    .option {
+        height: 40vh;
+        padding: 4%;
+        gap: 0px;
+        justify-content: center;
+    }
+
+    /* Reduce the size of the options images and text to make them fit better: */
+    .option>img {
+        height: 50%;
+    }
+}
+
+@media (max-width: 360px) {
+
+    /* Reduce the sizes of the text to fit a smaller screen: */
+    .username {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 290px) {
+
+    /* Reduce text size again: */
+    .username {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
     }
 }
