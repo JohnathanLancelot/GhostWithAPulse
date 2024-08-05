@@ -191,9 +191,7 @@ footer {
     }
 }
 
-/* UP TO HERE WITH RESPONSIVE POP-UPS- Character page exit button warping at 903px. */
-
-@media (max-width: 850px) {
+@media (max-width: 903px) {
 
     /* Making some of the text smaller to prevent layout warp: */
     h1 {
@@ -227,7 +225,12 @@ footer {
 
     .art-box>img {
         height: auto;
-        width: 80vw;
+        width: 72vw;
+    }
+
+    #backgrounds-art-box>img {
+        height: auto;
+        width: 72vw;
     }
 }
 
@@ -235,13 +238,19 @@ footer {
 
     /* Centering and enlarging the exit button to make it more visible: */
     .exit-button {
-        width: 4vw;
+        width: 5vw;
         left: 49%;
     }
 
     /* Making the pop-up text fit better: */
+    .pop-up-box {
+        width: 50vw;
+        left: 25vw;
+    }
+
     .pop-up-box>p {
-        top: 35vh;
+        width: 40vw;
+        left: 30vw;
     }
 }
 
