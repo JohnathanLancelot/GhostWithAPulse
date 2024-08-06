@@ -239,7 +239,7 @@ footer {
     /* Centering and enlarging the exit button to make it more visible: */
     .exit-button {
         width: 5vw;
-        left: 49%;
+        left: 47.5vw;
     }
 
     /* Making the pop-up text fit better: */
@@ -256,9 +256,15 @@ footer {
 
 @media (max-width: 554px) {
     
-    /* Making the options take up a greater persentage of the screen's width: */
+    /* Making the options take up a greater percentage of the screen's width: */
     .option {
         width: 70%;
+    }
+
+    /* Making the exit button on pop-ups bigger to improve visibility: */
+    .exit-button {
+        width: 7vw;
+        left: 46.5vw;
     }
 }
 
@@ -280,6 +286,19 @@ footer {
     /* Reduce the size of the options images and text to make them fit better: */
     .option>img {
         height: 50%;
+    }
+
+    /* Improve the look of the pop-up box at a smaller size: */
+    .pop-up-box {
+        width: 60vw;
+        left: 20vw;
+        height: 35vh;
+    }
+
+    .pop-up-box>p {
+        width: 50vw;
+        left: 25vw;
+        top: 35vh;
     }
 }
 
