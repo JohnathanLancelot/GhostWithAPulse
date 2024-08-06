@@ -375,7 +375,7 @@ function changeVersion(artTag)
     }
     else if (artTag == 'MapleTree')
     {
-        document.getElementById("maple").src = "../assets/images/art-images/characters/Game-art-2.PNG";
+        document.getElementById("maple").src = "../assets/images/art-images/characters/Game-art-2.png";
     }
     else
     {
@@ -404,7 +404,7 @@ function changeVersionBack(artTag)
     }
     else if (artTag == 'MapleTree')
     {
-        document.getElementById("maple").src = "../assets/images/art-images/characters/Game-art-1.PNG";
+        document.getElementById("maple").src = "../assets/images/art-images/characters/Game-art-1.png";
     }
     else
     {
