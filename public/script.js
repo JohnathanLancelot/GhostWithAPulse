@@ -404,7 +404,7 @@ function changeVersionBack(artTag)
     }
     else if (artTag == 'MapleTree')
     {
-        document.getElementById("maple").src = "../assets/images/art-images/characters/Game-art-1.png";
+        document.getElementById("maple").src = "../assets/images/art-images/characters/Game-art-1.PNG";
     }
     else
     {
