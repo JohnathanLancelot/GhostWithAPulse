@@ -70,6 +70,10 @@ function popUp(category, number) {
                     document.getElementById("icon-whippet").style.display = "block";
                     currentTextboxOpen = 'icon-whippet';
                     break;
+                case 14:
+                    document.getElementById("icon-deer").style.display = "block";
+                    currentTextboxOpen = 'icon-deer';
+                    break;
                 default:
                     alert("Number tag for one or more icon images is invalid. Check HTML!");
             }
