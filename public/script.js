@@ -78,6 +78,10 @@ function popUp(category, number) {
                     document.getElementById("icon-deer").style.display = "block";
                     currentTextboxOpen = 'icon-deer';
                     break;
+                case 16:
+                    document.getElementById("icon-urban-daisy").style.display = "block";
+                    currentTextboxOpen = 'icon-urban-daisy';
+                    break;
                 default:
                     alert("Number tag for one or more icon images is invalid. Check HTML!");
             }
