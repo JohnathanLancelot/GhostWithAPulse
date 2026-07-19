@@ -39,38 +39,42 @@ function popUp(category, number) {
                     currentTextboxOpen = 'icon-chloe';
                     break;
                 case 6:
+                    document.getElementById("icon-sonnet").style.display = "block";
+                    currentTextboxOpen = 'icon-sonnet';
+                    break;
+                case 7:
                     document.getElementById("icon-daisy").style.display = "block";
                     currentTextboxOpen = 'icon-daisy';
                     break;
-                case 7:
+                case 8:
                     document.getElementById("icon-meddy").style.display = "block";
                     currentTextboxOpen = 'icon-meddy';
                     break;
-                case 8:
+                case 9:
                     document.getElementById("icon-oxifawkes").style.display = "block";
                     currentTextboxOpen = 'icon-oxifawkes';
                     break;
-                case 9:
+                case 10:
                     document.getElementById("icon-pan").style.display = "block";
                     currentTextboxOpen = 'icon-pan';
                     break;
-                case 10:
+                case 11:
                     document.getElementById("icon-peek").style.display = "block";
                     currentTextboxOpen = 'icon-peek';
                     break;
-                case 11:
+                case 12:
                     document.getElementById("icon-phantasm").style.display = "block";
                     currentTextboxOpen = 'icon-phantasm';
                     break;
-                case 12:
+                case 13:
                     document.getElementById("icon-vex").style.display = "block";
                     currentTextboxOpen = 'icon-vex';
                     break;
-                case 13:
+                case 14:
                     document.getElementById("icon-whippet").style.display = "block";
                     currentTextboxOpen = 'icon-whippet';
                     break;
-                case 14:
+                case 15:
                     document.getElementById("icon-deer").style.display = "block";
                     currentTextboxOpen = 'icon-deer';
                     break;
